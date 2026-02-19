@@ -10,6 +10,9 @@ import json
 import os
 import time
 import sys
+from dotenv import load_dotenv
+
+load_dotenv()
 
 CHECKPOINT_FILE = "translation_checkpoint.json"
 OUTPUT_FILE = "Descriptions_NO_translated.xlsx"

@@ -4,3 +4,4 @@ translation.log
 translation_saknas.log
 translation.pid
 .env
+__pycache__/

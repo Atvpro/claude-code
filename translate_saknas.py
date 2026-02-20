@@ -133,6 +133,9 @@ import re
 def clean_html(text):
     if not text:
         return ""
+    if isinstance(text, dict):
+        text = next(iter(text.values()), "")
+    text = str(text)
     text = text.replace("_x000D_", "").replace("\r\n", "\n").replace("\r", "\n")
     text = re.sub(r'(<p>\s*<br>\s*</p>\s*)+', '', text)
     text = re.sub(r'(<p>\s*</p>\s*)+', '', text)

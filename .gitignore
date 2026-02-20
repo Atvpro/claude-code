@@ -1,4 +1,6 @@
 translation_checkpoint.json
+translation_saknas_checkpoint.json
 translation.log
+translation_saknas.log
 translation.pid
 .env
